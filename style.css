@@ -65,6 +65,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin: 10px 50px;
+    align-items: flex-start;
 }
 .featureHeader {
     text-align: center;
@@ -89,6 +90,7 @@ button {
 }
 .description {
     font-size: 13px;
+    padding: 10px 25px 0 0;
 }
 .orangeFeatureContainer {
     display: flex;
@@ -143,11 +145,13 @@ button {
 .quoteP {
     color: #ababab;
     font-style: italic;
+    font-size: 13px;
 }
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 20px 50px 35px 50px;
     row-gap: 15px;
     background-color: #424345;
@@ -159,4 +163,93 @@ nav > a, nav > span {
 }
 .activeHome {
     color: #1bb59d;
+}
+@media (max-width: 768px) {
+    .quoteContainer {
+        margin: 15px 80px;
+    }
+}
+@media (max-width: 640px) {
+    .quoteContainer {
+        margin: 15px 30px;
+    }
+    .whitePicLeft {
+        padding: 0 0 0 25px;
+    }
+    .whitePicRight {
+        padding: 0 25px 0 0;
+    }
+    .featureContainer {
+        margin: 10px 25px;
+    }
+}
+@media (max-width: 540px) {
+    .quoteContainer {
+        margin: 15px 15px;
+    }
+    .featurePic {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+    }
+    .whitePicLeft {
+        padding: 0 0 0 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .whitePicRight {
+        padding: 0 15px 0 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .whitePicLeft > div, .whitePicRight > div {
+        padding: 0 10px 10px 15px ;
+    }
+}
+@media (max-width: 480px) {
+    .featurePic {
+        width: 100%
+    }
+    .whitePicLeft, .whitePicRight {
+        width: 100%;
+    }
+    h4 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .whitePicLeft > i, .whitePicRight > i {
+        font-size: 40px;
+        padding: 15px 0 0 0;
+    }
+    .fa-solid.fa-cloud-arrow-down {
+        padding: 20px 20px 0 0;
+    }
+    .description {
+        text-align: center;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .line {
+        width: 50px;
+        height: 3px;
+        margin: 5px;
+    }
+}
+@media (max-width: 360px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .line {
+        width: 40px;
+        height: 3px;
+        margin: 5px;
+    }
 }
